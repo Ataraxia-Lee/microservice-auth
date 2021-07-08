@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 @Service
 public class UserServiceImpl implements UserService, UserDetailsService {

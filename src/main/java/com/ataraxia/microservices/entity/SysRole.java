@@ -5,7 +5,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import java.io.Serializable;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 public class SysRole implements Serializable {
 

@@ -19,7 +19,7 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 import javax.annotation.Resource;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 @Configuration
 @EnableAuthorizationServer

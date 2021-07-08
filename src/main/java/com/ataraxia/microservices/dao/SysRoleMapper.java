@@ -4,7 +4,7 @@ import com.ataraxia.microservices.entity.SysRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 public interface SysRoleMapper extends BaseMapper<SysRole> {
 }

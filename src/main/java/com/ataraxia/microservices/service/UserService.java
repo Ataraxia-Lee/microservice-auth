@@ -1,7 +1,7 @@
 package com.ataraxia.microservices.service;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 public interface UserService {
 

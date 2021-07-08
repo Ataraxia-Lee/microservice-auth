@@ -3,7 +3,7 @@ package com.ataraxia.microservices.entity;
 import java.io.Serializable;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 public class UserRoleRel implements Serializable {
 

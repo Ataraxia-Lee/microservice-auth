@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 public class SysUser implements UserDetails {
 

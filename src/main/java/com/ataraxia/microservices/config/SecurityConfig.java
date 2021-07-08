@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import javax.annotation.Resource;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {

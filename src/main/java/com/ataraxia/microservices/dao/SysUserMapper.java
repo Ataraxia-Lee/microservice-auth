@@ -4,7 +4,7 @@ import com.ataraxia.microservices.entity.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * @author MyPC
+ * @author lilong
  */
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
