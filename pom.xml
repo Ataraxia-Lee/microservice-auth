@@ -20,6 +20,7 @@
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.3.1</mybatis-plus.version>
         <alibaba-druid.version>1.2.4</alibaba-druid.version>
+        <spring-cloud.version>Hoxton.SR11</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -28,6 +29,15 @@
             <groupId>com.ataraxia.microservices</groupId>
             <artifactId>microservice-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
         </dependency>
 
         <dependency>
@@ -54,10 +64,20 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>${alibaba-druid.version}</version>
         </dependency>
-
-
     </dependencies>
 
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
