@@ -2,10 +2,8 @@ package com.ataraxia.microservices.service.impl;
 
 import com.ataraxia.microservices.dao.SysRoleMapper;
 import com.ataraxia.microservices.dao.SysUserMapper;
-import com.ataraxia.microservices.entity.SysRole;
 import com.ataraxia.microservices.entity.SysUser;
 import com.ataraxia.microservices.service.UserService;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -25,7 +23,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Resource
     private SysRoleMapper roleMapper;
-
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

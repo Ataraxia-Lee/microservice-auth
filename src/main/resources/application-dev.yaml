@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 
 #数据源配置
 spring:
@@ -25,3 +25,8 @@ mybatis-plus:
     db-config:
       #主键自增
       id-type: auto
+
+#SQL 日志
+logging:
+  level:
+    com.ataraxia.microservices.dao: debug

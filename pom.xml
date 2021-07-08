@@ -18,24 +18,23 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR11</spring-cloud.version>
         <mybatis-plus.version>3.3.1</mybatis-plus.version>
         <alibaba-druid.version>1.2.4</alibaba-druid.version>
     </properties>
 
     <dependencies>
+        <!--项目的common依赖模块-->
+        <dependency>
+            <groupId>com.ataraxia.microservices</groupId>
+            <artifactId>microservice-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-security</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -58,17 +57,7 @@
 
 
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+
 
     <build>
         <plugins>
