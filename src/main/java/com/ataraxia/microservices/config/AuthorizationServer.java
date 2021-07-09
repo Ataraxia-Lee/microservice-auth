@@ -73,16 +73,16 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("dimples")
+                .withClient("microservices")
                 .secret(new BCryptPasswordEncoder().encode("123456"))
                 // 为了测试，所以开启所有的方式，实际业务根据需要选择
-                .authorizedGrantTypes("authorization_code", "password", "client_credentials", "implicit", "refresh_token")
+                .authorizedGrantTypes("password", "refresh_token")
                 .accessTokenValiditySeconds(3600)
                 .refreshTokenValiditySeconds(864000)
                 .scopes("select")
                 // false跳转到授权页面，在授权码模式中会使用到
                 .autoApprove(false)
-                // 验证回调地址
+                // 验证回调地址 [授权码模式中会用到]
                 .redirectUris("http://www.baidu.com");
     }
 
