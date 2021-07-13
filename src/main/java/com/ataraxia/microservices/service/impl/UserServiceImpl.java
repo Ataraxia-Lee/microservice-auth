@@ -4,6 +4,7 @@ import com.ataraxia.microservices.dao.SysRoleMapper;
 import com.ataraxia.microservices.dao.SysUserMapper;
 import com.ataraxia.microservices.entity.SysUser;
 import com.ataraxia.microservices.service.UserService;
+import org.springframework.context.ApplicationContext;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
